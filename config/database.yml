@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: localhost
+  username: rish
+  password: password
+
+development:
+  <<: *default
+  database: customgem
+
+test:
+  <<: *default
+  database: customgem_test
+
+production:
+  <<: *default
+  database: customgem_production
+  username: customgem
+  password: <%= ENV['CUSTOMGEM_DATABASE_PASSWORD'] %>

@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.email                 = ['test@example.com']
   spec.summary               = 'Dump integration for Ruby on Rails'
   spec.description           = 'This gem allows to exchange translation files between your Rails app and Dump TMS.'
-  spec.homepage              = 'https://github.com/rishabhmanan'
+  spec.homepage              = 'https://github.com/rishabhmanan/CustomGem-Rails'
   spec.license               = 'MIT'
   spec.platform              = Gem::Platform::RUBY
   spec.required_ruby_version = '>= 2.5.0'
